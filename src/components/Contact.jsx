@@ -21,7 +21,7 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <motion.a
-              href="mailto:your.email@example.com"
+              href="mailto:YOUR_EMAIL@example.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 flex items-center gap-2"
@@ -43,7 +43,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://github.com/yourusername"
+              href="https://github.com/YOUR_GITHUB_USERNAME"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -65,7 +65,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

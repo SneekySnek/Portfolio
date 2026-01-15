@@ -63,13 +63,27 @@ npm run preview
 
 ## Configuration
 
+### Environment Variables
+
+Create a `.env` file in the root directory (copy from `.env.example`):
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and add your Google Analytics ID:
+
+```
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
 ### Google Analytics
 
 To enable Google Analytics tracking:
 
 1. Get your GA4 measurement ID from [Google Analytics](https://analytics.google.com/)
-2. Open `src/App.jsx`
-3. Replace `'G-XXXXXXXXXX'` with your actual measurement ID
+2. Add it to your `.env` file as shown above
+3. The app will automatically initialize GA when the measurement ID is set
 
 ### GitHub Pages
 

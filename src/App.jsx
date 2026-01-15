@@ -9,9 +9,9 @@ import Footer from './components/Footer'
 function App() {
   useEffect(() => {
     // Initialize Google Analytics
-    // Replace with your actual GA4 measurement ID
-    const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
-    if (GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
+    // Set VITE_GA_MEASUREMENT_ID in your environment or .env file
+    const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID
+    if (GA_MEASUREMENT_ID) {
       ReactGA.initialize(GA_MEASUREMENT_ID)
     }
   }, [])
